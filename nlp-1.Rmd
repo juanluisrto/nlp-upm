@@ -1,0 +1,40 @@
+---
+title: "Intelligent Systems - NLP assignment Hands-on 2"
+author: "Juan Luis Ruiz-Tagle"
+date: "12/22/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+source("nlp.R")
+```
+
+## Annotation
+The corresponding file to my DNI is the following "cv493_12839.txt". It has been the only one utilized since my computer could not handle the whole corpus.
+
+Here we can see the first senteces of the file
+
+```{r cars}
+inspect(corpus[[1]])
+```
+Example of word, sentence and part-of-speech annotations:
+
+#### Word
+```{r cars}
+head(tagged_words(doc), 10)
+```
+
+ 
+#### Tagged annotations in sentence
+```{r cars}
+head(tagged_sents(doc),2)
+```
+#### Part of speech in sentence
+```{r cars}
+
+head(parsed_sents(doc),2)
+```
+we can confirm that the tagging and parsing is moreless consistent and makes sense.
+

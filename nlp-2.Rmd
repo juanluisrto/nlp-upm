@@ -1,0 +1,36 @@
+---
+title: "Intelligent Systems - NLP assignment"
+author: "Juan Luis Ruiz-Tagle"
+date: "12/22/2019"
+output: html_document
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+source("nlp.R")
+
+# “<Student name> - 1 Annotation.html”
+# <Student name> - 2 NER.html”
+```
+
+## Recognize entities
+ Define lexical-syntactic patterns using regular expressions to detect person names
+
+```{r cars}
+inspect(corpus[[1]])
+```
+Example of word, sentence and part-of-speech annotations:
+
+## Assess approach
+```{r cars}
+head(tagged_words(doc), 10)
+```
+
+ 
+## Answer question
+
+Which patterns have worked better? Which worse? Why?
+
